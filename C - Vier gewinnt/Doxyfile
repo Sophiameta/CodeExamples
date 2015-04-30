@@ -1,0 +1,19 @@
+# Die Dokumentation befindet sich im Unterverzeichnis doc.
+OUTPUT_DIRECTORY	= doc
+
+# Basis fuer die Dokumentation ist das aktuelle Verzeichnis.
+INPUT			= .
+
+# Alle in Frage kommenden Dateien werden untersucht.
+EXTRACT_ALL		= YES
+
+# Das Werkzeug dot wird zum Zeichnen der Aufrufhierarchie benutzt.
+# Es geh�rt zur Visualisierungssoftware Graphvis.
+HAVE_DOT		= YES
+
+# Die Aufrufhierarchie wird erstellt.
+CALL_GRAPH		= YES
+
+PROJECT_NAME		= Viergewinnt
+
+OUTPUT_LANGUAGE 	= German

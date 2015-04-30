@@ -1,0 +1,30 @@
+# Optionen
+include_dateien    = [    # wo wird nach .h Dateien gesucht?
+    '.'                   # im lokalen Verzeichnis
+]
+shared_libraries   = [    # mathematische Funktionen der
+   'm'                    # Standardbibliothek
+] 
+c_standard         = [    # Angaben zum Standard
+    '-std=c99',           # C99
+    '-pedantic'           # keine Erweiterungen zulaessig
+]
+warnungen          = [    # Einstellungen zu Syntaxfehlern
+#    '-Wall',              # viel meckern
+#    '-Wextra',            # extra viel meckern
+    '-Werror'             # Warnungen sind Fehler
+] 
+# Definition des Environments
+std = Environment(
+  CCFLAGS = c_standard + warnungen,
+  CPPPATH = include_dateien,
+  LIBS    = shared_libraries
+) 
+# Programm bauen
+c_dateien = [
+    'viergewinnt_main.c',
+    'eingabe.c',
+    'viergewinnt_funktionen.c'
+]
+programm_name = 'viergewinnt'
+std.Program(programm_name, c_dateien)

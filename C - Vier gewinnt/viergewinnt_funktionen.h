@@ -1,0 +1,10 @@
+void erfasse_spieler_namen(char *spieler1, char *spieler2);
+int **erstelle_spielfeld(int spielfeld_breite, int spielfeld_hoehe);
+void intitalisiere_spielfeld(int spielfeld_breite, int spielfeld_hoehe, int **spielfeld);
+void ausgabe_spielfeld(int spielfeld_breite, int spielfeld_hoehe, int **spielfeld);
+void schreibe_trennzeichen(int spielfeld_breite);
+void schreibe_spielfeld(int spielfeld_breite, int spielfeld_hoehe, int **spielfeld);
+void schreibe_spalten_nummer(int spielfeld_breite);
+int ermittle_freie_spaltenstelle(int eingabe_spalte, int spielfeld_hoehe, int **spielfeld);
+int pruefe_auf_gewinner(int spielfeld_breite, int spielfeld_hoehe, int **spielfeld);
+void ausgabe_sieger(int spielverlauf, char *spieler1, char *spieler2);
