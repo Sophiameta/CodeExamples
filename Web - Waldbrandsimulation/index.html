@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Waldbrand-Simulation</title>
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    </head>
+    <body onload="initScenery();">
+        <h1> Waldbrand-Simulation </h1>
+        <div>
+            <canvas id="canvas" width="500" height="500">
+            </canvas>
+        </div>
+        <form>
+            <div>
+                <b> Baumdichte: </b><output name="densityOut" for="density">70</output>%<br>
+                <input onclick="initScenery();" type="range" name="density" id="density" value="70" min="10" max="90" step="10" oninput="densityOut.value=density.value"/>
+            </div>
+            <div>
+                <b> Feuchtigkeit: </b><output name="humidityOut" for="humidity">50</output>%<br>
+                <input type="range" name="humidity" id="humidity" value="50" min="0" max="100" step="5" oninput="humidityOut.value=humidity.value"/>
+            </div>
+            <div>
+                <b> Geschwindigkeit: </b><output name="speedOut" for="speed">1</output><br>
+                <input type="range" name="speed" id="speed" value="1" min="1" max="10" step="1" oninput="speedOut.value=speed.value"/>
+            </div>
+            <div id="treeCount"></div>
+            <div>
+                <button type="button" onclick="stopInterval();">Simulation anhalten</button>
+            </div>
+        </form>
+
+        <script type="text/javascript">
+
+
+        </script>
+    </body>
+</html>

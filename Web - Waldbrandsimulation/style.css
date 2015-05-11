@@ -1,0 +1,36 @@
+body{
+    font-family: 'Droid Sans', 'sans-serif';
+    color: black;
+}
+
+h1 {
+    font-family: Lobster, serif;
+}
+
+canvas {
+    display: inline-block;
+    float: left;
+}
+form {
+    padding-top: 100px;
+    float: left;
+    padding-left: 5%;
+    display: inline-block;
+}
+
+div {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+input {
+    display: inline-block;
+}
+
+output {
+    display: inline-block;
+}
+
+div.treeCount {
+    padding-top: 20px;
+}
